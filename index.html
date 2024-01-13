@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6ec79b24d3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="settings-btn">
+            <i class="fa-solid fa-gear"></i>
+        </div>
+        <div class="todo">
+            <div class="shadow-img"></div>
+            <p>Hello, <span class="name">Mateusz</span></p>
+            <h1>Your Tasks For Today</h1>
+            <div class="small-img"></div>
+            <div class="line"></div>
+        </div>
+        <div class="todo-box">
+            <p class="inbox">INBOX</p>
+            <p class="error"></p>
+            <ul>
+                <li id="test">Drink a coffee<div class="tools">
+                        <button class="complete"><i class="fa-solid fa-check"></i></button><button
+                            class="edit">EDIT</button><button class="delete"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                </li>
+                <li id="test">Walk the dog<div class="tools">
+                        <button class="complete"><i class="fa-solid fa-check"></i></button><button
+                            class="edit">EDIT</button><button class="delete"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                </li>
+
+            </ul>
+            <div class="btn">
+                <button class="add"><i class="fa-solid fa-plus"></i></button>
+
+            </div>
+
+        </div>
+
+        <div class="settings">
+            <h1>Settings</h1>
+            <div class="settings-box">
+                <div class="settings-item">
+                    <label for="name">Name:</label>
+                    <input type="text" placeholder="Name..." class="username">
+                </div>
+                <div class="settings-item">
+                    <label for="name">Avatar:</label>
+                    <input type="text" placeholder="URL..." class="avatar">
+                </div>
+                <button class="settings-save">SAVE</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="add-task">
+        <h3>Add new task:</h3>
+        <button class="back add-back"><i class="fa-solid fa-arrow-left"></i></button>
+        <input type="text" placeholder="Enter a new task..." class="add-task-input">
+        <p class="add-task-info"></p>
+        <button class="save save-task">SAVE</button>
+    </div>
+
+    <div class="edit-task">
+        <h3>Edit task:</h3>
+        <button class="back edit-back"><i class="fa-solid fa-arrow-left"></i></button>
+        <input type="text" placeholder="Edit task..." class="edit-task-input">
+        <p class="edit-task-info"></p>
+        <button class="save save-edit">SAVE</button>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
